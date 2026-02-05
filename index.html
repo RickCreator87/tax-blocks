@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Tools | Richard's Credit Authority</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans">
+    <nav class="p-6 bg-white border-b"><a href="/" class="font-bold text-blue-700">← Back to Authority Hub</a></nav>
+    <header class="py-16 px-6 text-center bg-white border-b">
+        <h1 class="text-4xl font-extrabold mb-4">The Credit Utility Belt</h1>
+        <p class="text-slate-500">Fast, accurate calculators for every financial decision.</p>
+    </header>
+
+    <main class="max-w-4xl mx-auto py-12 px-6 space-y-8">
+        <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200">
+            <h2 class="text-xl font-bold mb-4 flex items-center gap-2"><i class="fa-solid fa-calculator text-blue-600"></i> Debt-to-Income (DTI)</h2>
+            <div class="grid md:grid-cols-2 gap-4">
+                <input type="number" id="monthlyDebt" placeholder="Monthly Debt ($)" class="p-3 border rounded-xl outline-none focus:ring-2 focus:ring-blue-500">
+                <input type="number" id="monthlyIncome" placeholder="Gross Monthly Income ($)" class="p-3 border rounded-xl outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+            <button onclick="calcDTI()" class="mt-4 w-full bg-blue-600 text-white py-3 rounded-xl font-bold">Calculate DTI</button>
+            <p id="dtiResult" class="mt-4 text-center font-bold text-xl text-blue-700"></p>
+        </div>
+    </main>
+
+    <script>
+        function calcDTI() {
+            const debt = parseFloat(document.getElementById('monthlyDebt').value);
+            const income = parseFloat(document.getElementById('monthlyIncome').value);
+            if(debt && income) {
+                const dti = ((debt / income) * 100).toFixed(1);
+                document.getElementById('dtiResult').innerText = `Your DTI is ${dti}%`;
+            }
+        }
+    </script>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Blocks | Richard's Credit Authority</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-slate-900 text-white">
+    <nav class="p-6 border-b border-slate-800"><a href="/" class="font-bold text-blue-400">← Back to Authority Hub</a></nav>
+    <header class="py-20 px-6 text-center">
+        <h1 class="text-4xl font-black mb-4">TAX <span class="text-blue-500">BLOCKS</span></h1>
+        <p class="text-slate-400 max-w-xl mx-auto">Strategic tax planning to fuel your credit restoration and wealth building.</p>
+    </header>
+
+    <div class="max-w-4xl mx-auto px-6 grid md:grid-cols-2 gap-6 pb-20">
+        <div class="p-8 bg-slate-800 rounded-3xl border border-slate-700">
+            <i class="fa-solid fa-shield-halved text-3xl text-blue-500 mb-4"></i>
+            <h3 class="font-bold text-xl mb-2">Lien Protection</h3>
+            <p class="text-slate-400 text-sm italic">Strategies to handle tax debt before it hits your credit report.</p>
+        </div>
+        <div class="p-8 bg-slate-800 rounded-3xl border border-slate-700">
+            <i class="fa-solid fa-arrow-up-right-dots text-3xl text-green-500 mb-4"></i>
+            <h3 class="font-bold text-xl mb-2">Refund Injection</h3>
+            <p class="text-slate-400 text-sm italic">Using tax returns to settle collections for pennies on the dollar.</p>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Disbursement | Richard's Credit Authority</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-slate-50">
+    <nav class="p-6 bg-white border-b"><a href="/" class="font-bold text-blue-700">← Back to Authority Hub</a></nav>
+    <header class="py-16 text-center">
+        <h1 class="text-3xl font-bold">Loan Transparency Engine</h1>
+        <p class="text-slate-500">Understand your capital flow before you sign.</p>
+    </header>
+
+    <div class="max-w-2xl mx-auto p-8 bg-white shadow-xl rounded-3xl border border-slate-100">
+        <h2 class="font-bold mb-6 text-slate-700">Disbursement Summary</h2>
+        <div class="space-y-4">
+            <div class="flex justify-between border-b pb-2"><span>Principal Amount</span><span class="font-mono">$25,000</span></div>
+            <div class="flex justify-between border-b pb-2 text-red-500"><span>Origination Fee (3%)</span><span class="font-mono">-$750</span></div>
+            <div class="flex justify-between pt-4 font-bold text-xl text-green-600"><span>Net Disbursement</span><span class="font-mono">$24,250</span></div>
+        </div>
+        <p class="mt-8 text-xs text-slate-400 text-center italic">Financial Disclosure: Rates and fees vary by lender. This is a sample calculation for educational transparency.</p>
+    </div>
+</body>
+</html>
