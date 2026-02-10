@@ -1,5 +1,7 @@
 rickcreator87-tax-blocks/
 
+Stars: [![Stars](https://img.shields.io/github/stars/your-username/your-repo-name.svg)](https://github.com/your-username/your-repo-name/stargazers) Downloads: [![Downloads](https://img.shields.io/github/downloads/your-username/your-repo-name/total.svg)](https://github.com/your-username/your-repo-name/releases) Version: [![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/your-username/your-repo-name/releases) License: [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT) Build Status: [![Build Status](https://img.shields.io/travis/your-username/your-repo-name.svg)](https://travis-ci.org/your-username/your-repo-name)
+
 
 # Tax Blocks
 
